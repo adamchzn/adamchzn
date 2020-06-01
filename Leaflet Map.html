@@ -39,7 +39,7 @@
     L.geoJSON(data, {
     pointToLayer: function (feature, data) {
         return L.circleMarker(data, 
-          {radius: 6 + Math.sqrt(feature.properties.Count), 
+          {radius: Math.log(feature.properties.Count * 9) * 3, 
           stroke: true,
           color: "#386D96",
           opacity: 0.6,
