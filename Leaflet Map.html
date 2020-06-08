@@ -35,7 +35,7 @@
   }).addTo(map);
 
     
-    var colleges = $.getJSON("convertcsv.geojson", function(data) {  
+    var colleges = $.getJSON("out.geojson", function(data) {  
     // console.log("1", data);
     L.geoJSON(data, {
     pointToLayer: function (feature, data) {
